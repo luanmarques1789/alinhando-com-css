@@ -4,14 +4,29 @@
 	<h2>Centralizando Vertical e Horizontalmente:</h2>
 	<h3>Position + Tamanhos + Margin auto</h3>
     <style contenteditable="true">
+    
+    
+    /* Este método de centralização
+    trabalha com o elemento FILHO */
+
+    
     .wrapper2 {
-        position: relative;
-        height: 200px;
+        height: 529px;
+        width: 400px;
         background: #ebebeb;
+        position: relative;
     }
     .square {
         width: 100px;
         height: 100px;
+        
+        
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
     }
     </style>
 	<div class="wrapper wrapper2">	

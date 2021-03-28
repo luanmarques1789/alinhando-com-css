@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="./base.css" />
+
+<style contenteditable="true">
+    .wrapperBonus {
+        background: #ebebeb;
+        height: 200px;
+        text-align: center;
+    }
+
+    .btnBonus {
+        display: inline-block;
+    }
+
+    .text {
+        
+    }
+    
+    /* Quando temos o display inline não podemos assumir valores para
+    altura e largura do conteúdo, uma vez que ele está EM LINHA.
+    Embora o diisplay block possa solucionar o problema, entretanto 
+    ao utilizá-lo não pode haver concorrência de elementos no mesmo nível
+    que a sua altura e largura */
+
+    p {
+        width: 100px;
+        height: 70px;
+        text-align: center;
+        border: 1px solid;
+        display: inline-block;
+        
+    }
+</style>
+
+<section class="container first-area">
+    <h2>Centralizando Horizontalmente:</h2>
+    <h3>Bônus: text-align center + display inline-block</h3>
+
+    <div class="wrapper wrapperBonus">
+        <button class="btnBonus">Texto do botão</button>
+    </div>
+
+    <div class="text">
+        <p> Kamila</p>
+        <a href="">Link</a>
+    </div>
+
+</section>
